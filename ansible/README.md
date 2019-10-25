@@ -14,5 +14,5 @@ Using the inventory lists generated after our Terraform build step, we're able t
 Start the test using this command:  
 `ansible-playbook -i inventory/sdkperf-nodes.inventory ansible/start-sdkperf.yml`
 
-Stop the test using this command:
+Stop the test using this command:  
 `ansible-playbook -i inventory/sdkperf-nodes.inventory ansible/stop-sdkperf.yml`
