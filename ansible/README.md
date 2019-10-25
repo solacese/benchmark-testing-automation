@@ -6,7 +6,7 @@ Using the inventory lists generated after our Terraform build step, we're able t
 
 ## Instructions
 
-1. Edit start-sdkperf.yml.EDIT-ME  
+1. **Edit start-sdkperf.yml.EDIT-ME**  
    This file contains all the configurations that will be passed to the SDKPerf commands that are executed on our SDKPerf nodes. The file includes additional instructions as comments.
 
 ## Running the tests
