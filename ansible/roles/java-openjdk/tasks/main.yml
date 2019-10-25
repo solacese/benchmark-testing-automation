@@ -4,7 +4,7 @@
 - block:
     - name: add openjdk-r ppa
       apt_repository:
-        repo: 'ppa:openjdk-r/ppa'
+        repo: "ppa:openjdk-r/ppa"
         state: present
         update_cache: true
       when: java_openjdk_use_ppa or java_openjdk_version == 8
@@ -18,8 +18,8 @@
 
     - name: set openjdk as default java
       alternatives:
-         name: java
-         path: "{{ java_openjdk_java_bin }}"
+        name: java
+        path: "{{ java_openjdk_java_bin }}"
 
     - name: add default-java symlink
       file:

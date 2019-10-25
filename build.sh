@@ -7,6 +7,8 @@
 # (2) forms a template file for the Solace broker nodes
 # (3) builds using terraform
 # (4) generates inventory lists for use by ansible
+#
+# @author Andrew Roberts
 # - + - + - + - + - + - + - + - + - + - + - + - + - + - + - + - + -
 
 cd `dirname $0`

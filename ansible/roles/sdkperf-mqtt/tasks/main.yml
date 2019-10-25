@@ -1,5 +1,5 @@
 ---
-# tasks file for sdkperf-node-mqtt
+# tasks file for sdkperf-mqtt
 - name: Copy sdkperf to worker nodes
   copy:
     src: sdkperf-mqtt-8.4.1.8

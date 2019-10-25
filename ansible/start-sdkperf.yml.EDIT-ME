@@ -26,7 +26,7 @@
 
     # probably don't touch these
     msg_number: 10000000000 # how many total messages to send, but we don't want our test to stop until we tell it to
-    msg_rate_per_second: 0 # 0 === full blast, if you want to run controlled tests you can edit this
+    msg_rate_per_second: 0 # 0 === full blast, which is the behavior we want if we're testing for msg/sec rates.  If you want to run controlled tests you can edit this
 
   ##################################################
 
