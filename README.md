@@ -6,22 +6,22 @@ This repository is a collection of Terraform and Ansible configuration files tha
 
 **These scripts allow you to**:
 
-**1**. Provision N number of SDKPerf nodes
-**2**. Provision N number of singleton Solace PS+ Software event broker nodes
-**3**. Configure SDKPerf commands
-**4**. Execute your configured SDKPerf command on all your SDKPerf nodes
-**5**. Kill the SDKPerf processes on all your SDKPerf nodes
-**6**. Cleanup all the resources used in your test
+- Provision N number of SDKPerf nodes
+- Provision N number of singleton Solace PS+ Software event broker nodes
+- Configure SDKPerf commands
+- Execute your configured SDKPerf command on all your SDKPerf nodes
+- Kill the SDKPerf processes on all your SDKPerf nodes
+- Cleanup all the resources used in your test
 
 SDKPerf is a tool for validating performance, checking configuration, and exploring features associated with your Solace PubSub+ event broker. You can download it [here](https://solace.com/downloads/#other-software), or read our documentation on it [here](https://docs.solace.com/SDKPerf/SDKPerf.htm#contentBody).
 
 **To tie Terraform and Ansible together, we do two things:**
 
-**1**. Run an Ansible playbook after the EC2 instance has been provisioned using Terraform's local_exec provisioner
-**2**. Generate an inventory list from our groups of AWS EC2 instances by formatting Terraform's output
+- Run an Ansible playbook after the EC2 instance has been provisioned using Terraform's local_exec provisioner
+- Generate an inventory list from our groups of AWS EC2 instances by formatting Terraform's output
 
 Step 1 lets us use Ansible to set up our EC2 instances.  
-Step 2 lets us execute Ansible playbooks on the EC2 instances we create with Terraform.
+Step 2 lets us use Ansible to execute playbooks on the EC2 instances we create with Terraform.
 
 ## Getting Started
 
